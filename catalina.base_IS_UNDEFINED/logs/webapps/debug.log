@@ -1,19 +1,5 @@
-2018-05-10 11:23:10.399 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductCategoryDao.queryProductCategoryList]use[slave]Strategy,SqlCommanType[SELECT]..
-2018-05-10 11:23:10.407 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:slave
-2018-05-10 11:23:10.425 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id, FROM tb_product_category WHERE shop_id=? 
-2018-05-10 11:23:10.486 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
-2018-05-10 11:25:02.857 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductCategoryDao.queryProductCategoryList]use[slave]Strategy,SqlCommanType[SELECT]..
-2018-05-10 11:25:02.860 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:slave
-2018-05-10 11:25:02.874 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id=? 
-2018-05-10 11:25:02.922 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
-2018-05-10 11:25:02.989 [main] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 3
-2018-05-10 11:26:24.609 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductCategoryDao.queryProductCategoryList]use[slave]Strategy,SqlCommanType[SELECT]..
-2018-05-10 11:26:24.612 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:slave
-2018-05-10 11:26:24.626 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id=? 
-2018-05-10 11:26:24.672 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 1(Long)
-2018-05-10 11:26:24.686 [main] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 3
-2018-05-10 11:26:47.224 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductCategoryDao.queryProductCategoryList]use[slave]Strategy,SqlCommanType[SELECT]..
-2018-05-10 11:26:47.227 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:slave
-2018-05-10 11:26:47.240 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id=? 
-2018-05-10 11:26:47.287 [main] DEBUG c.i.o.d.P.queryProductCategoryList - ==> Parameters: 6(Long)
-2018-05-10 11:26:47.303 [main] DEBUG c.i.o.d.P.queryProductCategoryList - <==      Total: 1
+2018-05-11 10:11:32.921 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductCategoryDao.batchInsertProductCategory]use[master]Strategy,SqlCommanType[INSERT]..
+2018-05-11 10:11:32.929 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
+2018-05-11 10:11:32.970 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - ==>  Preparing: INSERT INTO tb_product_category(product_category_name,priority,create_time,shop_id) VALUES ( ?, ?, ?, ? ) , ( ?, ?, ?, ? ) 
+2018-05-11 10:11:33.004 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - ==> Parameters: 商品类别1(String), 1(Integer), 2018-05-11 10:11:32.902(Timestamp), 1(Long), 商品类别2(String), 2(Integer), 2018-05-11 10:11:32.902(Timestamp), 1(Long)
+2018-05-11 10:11:33.083 [main] DEBUG c.i.o.d.P.batchInsertProductCategory - <==    Updates: 2
