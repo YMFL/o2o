@@ -48,7 +48,7 @@ $(function() {
       var tempObj = {};
       tempObj.productCategoryName = $(item).find('.category').val();
       tempObj.priority = $(item).find('.priority').val();
-      tempObj.
+      tempObj
       if (tempObj.productCategoryName && tempObj.priority) {
         productCategoryList.push(tempObj);
       }
