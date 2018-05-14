@@ -1,6 +1,7 @@
 package com.imooc.o2o.service;
 
 import com.imooc.o2o.BaseTest;
+import com.imooc.o2o.dto.ImageHolder;
 import com.imooc.o2o.dto.ShopExecution;
 import com.imooc.o2o.entity.Area;
 import com.imooc.o2o.entity.PersonInfo;
@@ -27,27 +28,28 @@ public class ShopServiceTest extends BaseTest {
 
 
     @Test
-    public void testGetShopList(){
-        Shop shopCondition =new Shop();
-        ShopCategory sc =new ShopCategory();
+    public void testGetShopList() {
+        Shop shopCondition = new Shop();
+        ShopCategory sc = new ShopCategory();
         sc.setShopCategoryId(3L);
         shopCondition.setShopCategory(sc);
-        ShopExecution se=shopService.getShopList(shopCondition,2,2);
-        System.out.println("店铺列表数为："+se.getShopList().size());
-        System.out.println("店铺总数为："+se.getCount());
+        ShopExecution se = shopService.getShopList(shopCondition, 2, 2);
+        System.out.println("店铺列表数为：" + se.getShopList().size());
+        System.out.println("店铺总数为：" + se.getCount());
     }
 
 
     @Test
     @Ignore
-    public void testModifyShop() throws ShopOperationException,FileNotFoundException{
-        Shop shop= new Shop();
+    public void testModifyShop() throws ShopOperationException, FileNotFoundException {
+        Shop shop = new Shop();
         shop.setShopId(1L);
         shop.setShopName("修改后的店铺名称");
         File shopImg = new File("/Users/yqh/Documents/add.png");
-        InputStream is=new FileInputStream(shopImg);
-        ShopExecution shopExecution=shopService.modifyShop(shop,is,"dabai.png");
-        System.out.println("新的图片地址："+shopExecution.getShop().getShopImg());
+        InputStream is = new FileInputStream(shopImg);
+        ImageHolder imageHolder = new ImageHolder("dabai.png", is);
+        ShopExecution shopExecution = shopService.modifyShop(shop, imageHolder);
+        System.out.println("新的图片地址：" + shopExecution.getShop().getShopImg());
     }
 
     @Test
@@ -74,7 +76,8 @@ public class ShopServiceTest extends BaseTest {
         shop.setAdvice("审核中");
         File shopImg = new File("/Users/yqh/Documents/test.jpg");
         InputStream is = new FileInputStream(shopImg);
-        ShopExecution se = shopService.addShop(shop, is, shopImg.getName());
+        ImageHolder imageHolder = new ImageHolder(shopImg.getName(), is);
+        ShopExecution se = shopService.addShop(shop, imageHolder);
         assertEquals(ShopStateEnum.CHECK.getState(), se.getState());
     }
 }

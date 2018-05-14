@@ -25,6 +25,12 @@ public class ProductCategoryManagementController {
     @Autowired
     private ProductCategoryService productCategoryService;
 
+
+    /**
+     * 获取产品类别列表
+     * @param request
+     * @return
+     */
     @RequestMapping(value = "/getproductcategorylist", method = RequestMethod.GET)
     @ResponseBody
     private Result<List<ProductCategory>> getProductCategoryList(HttpServletRequest request) {
