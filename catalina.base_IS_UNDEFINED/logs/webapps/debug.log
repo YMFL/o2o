@@ -1,22 +1,30 @@
-2018-05-14 10:33:05.022 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is:upload/item/shop1/2018051410330515541.png
-2018-05-14 10:33:05.027 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is:/Users/yqh/Documents/image/upload/item/shop1/2018051410330515541.png
-2018-05-14 10:33:05.999 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
-2018-05-14 10:33:06.002 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
-2018-05-14 10:33:06.016 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
-2018-05-14 10:33:06.083 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试商品1(String), 测试商品1(String), upload/item/shop1/2018051410330515541.png(String), null, null, 20(Integer), 2018-05-14 10:33:05.018(Timestamp), 2018-05-14 10:33:05.018(Timestamp), 1(Integer), 1(Long), 1(Long)
-2018-05-14 10:46:45.395 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is:upload/item/shop1/2018051410464550068.png
-2018-05-14 10:46:45.397 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is:/Users/yqh/Documents/image/upload/item/shop1/2018051410464550068.png
-2018-05-14 10:46:46.206 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
-2018-05-14 10:46:46.210 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
-2018-05-14 10:46:46.219 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
-2018-05-14 10:46:46.258 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试商品1(String), 测试商品1(String), upload/item/shop1/2018051410464550068.png(String), null, null, 20(Integer), 2018-05-14 10:46:45.39(Timestamp), 2018-05-14 10:46:45.39(Timestamp), 1(Integer), 2(Long), 1(Long)
-2018-05-14 10:46:46.261 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
-2018-05-14 10:46:46.280 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :upload/item/shop1/2018051410464623842.png
-2018-05-14 10:46:46.280 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :/Users/yqh/Documents/image/upload/item/shop1/2018051410464623842.png
-2018-05-14 10:46:46.539 [main] DEBUG com.imooc.o2o.util.ImageUtil - current relativeAddr is :upload/item/shop1/2018051410464697051.png
-2018-05-14 10:46:46.539 [main] DEBUG com.imooc.o2o.util.ImageUtil - current complete addr is :/Users/yqh/Documents/image/upload/item/shop1/2018051410464697051.png
-2018-05-14 10:46:46.761 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductImgDao.batchInsertProductImg]use[master]Strategy,SqlCommanType[INSERT]..
-2018-05-14 10:46:46.762 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
-2018-05-14 10:46:46.787 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==>  Preparing: INSERT INTO tb_product_img(img_addr,img_desc,priority, create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) , ( ?, ?, ?, ?, ? ) 
-2018-05-14 10:46:46.788 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - ==> Parameters: upload/item/shop1/2018051410464623842.png(String), null, null, 2018-05-14 10:46:46.538(Timestamp), 3(Long), upload/item/shop1/2018051410464697051.png(String), null, null, 2018-05-14 10:46:46.761(Timestamp), 3(Long)
-2018-05-14 10:46:46.790 [main] DEBUG c.i.o2o.dao.ProductImgDao.batchInsertProductImg - <==    Updates: 2
+2018-05-17 09:58:29.581 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
+2018-05-17 09:58:29.587 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
+2018-05-17 09:58:29.607 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
+2018-05-17 09:58:29.648 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试1(String), 测试Desc1(String), test1(String), null, null, 1(Integer), 2018-05-17 09:58:29.562(Timestamp), 2018-05-17 09:58:29.562(Timestamp), 1(Integer), 1(Long), 1(Long)
+2018-05-17 09:58:29.662 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2018-05-17 09:58:29.672 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
+2018-05-17 09:58:29.673 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
+2018-05-17 09:58:29.673 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
+2018-05-17 09:58:29.674 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试2(String), 测试Desc2(String), test2(String), null, null, 2(Integer), 2018-05-17 09:58:29.562(Timestamp), 2018-05-17 09:58:29.562(Timestamp), 0(Integer), 1(Long), 1(Long)
+2018-05-17 09:58:29.675 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2018-05-17 09:58:29.676 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
+2018-05-17 09:58:29.676 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
+2018-05-17 09:58:29.676 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
+2018-05-17 09:58:29.678 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), 测试Desc3(String), test3(String), null, null, 3(Integer), 2018-05-17 09:58:29.562(Timestamp), 2018-05-17 09:58:29.562(Timestamp), 1(Integer), 1(Long), 1(Long)
+2018-05-17 09:58:29.684 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2018-05-17 09:58:44.580 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
+2018-05-17 09:58:44.582 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
+2018-05-17 09:58:44.595 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
+2018-05-17 09:58:44.623 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试1(String), 测试Desc1(String), test1(String), null, null, 1(Integer), 2018-05-17 09:58:44.565(Timestamp), 2018-05-17 09:58:44.565(Timestamp), 1(Integer), 1(Long), 1(Long)
+2018-05-17 09:58:44.626 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2018-05-17 09:58:44.632 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
+2018-05-17 09:58:44.632 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
+2018-05-17 09:58:44.632 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
+2018-05-17 09:58:44.634 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: 测试2(String), 测试Desc2(String), test2(String), null, null, 2(Integer), 2018-05-17 09:58:44.566(Timestamp), 2018-05-17 09:58:44.566(Timestamp), 0(Integer), 1(Long), 1(Long)
+2018-05-17 09:58:44.635 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1
+2018-05-17 09:58:44.635 [main] DEBUG c.imooc.o2o.dao.split.DynamicDataSourceInterceptor - 设置方法[com.imooc.o2o.dao.ProductDao.insertProduct]use[master]Strategy,SqlCommanType[INSERT]..
+2018-05-17 09:58:44.636 [main] DEBUG com.imooc.o2o.dao.split.DynamicDataSourceHolder - 所使用的数据源为:master
+2018-05-17 09:58:44.636 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
+2018-05-17 09:58:44.637 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - ==> Parameters: test3(String), 测试Desc3(String), test3(String), null, null, 3(Integer), 2018-05-17 09:58:44.566(Timestamp), 2018-05-17 09:58:44.566(Timestamp), 1(Integer), 1(Long), 1(Long)
+2018-05-17 09:58:44.638 [main] DEBUG com.imooc.o2o.dao.ProductDao.insertProduct - <==    Updates: 1

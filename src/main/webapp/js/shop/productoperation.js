@@ -36,18 +36,16 @@ $(function () {
                 var optionArr = data.productCategoryList;
                 var optionSelected = product.productCategory.productCategoryId;
                 // 生成前端的HTML商品类别列表，并默认选择编辑前的商品类别
-                optionArr
-                    .map(function (item, index) {
-                        var isSelect = optionSelected === item.productCategoryId ? 'selected'
-                            : '';
-                        optionHtml += '<option data-value="'
-                            + item.productCategoryId
-                            + '"'
-                            + isSelect
-                            + '>'
-                            + item.productCategoryName
-                            + '</option>';
-                    });
+                optionArr.map(function (item, index) {
+                    var isSelect = optionSelected === item.productCategoryId?'selected':'';
+                    optionHtml += '<option data-value="'
+                        + item.productCategoryId
+                        + '"'
+                        + isSelect
+                        + '>'
+                        + item.productCategoryName
+                        + '</option>';
+                });
                 $('#category').html(optionHtml);
             }
         });
@@ -120,15 +118,14 @@ $(function () {
                 return;
             }
             formData.append("verifyCodeActual", verifyCodeActual);
-            console.log(formData)
             // 将数据提交至后台处理相关操作
             $.ajax({
                 url: productPostUrl,
                 type: 'POST',
                 data: formData,
-                // contentType: false,
-                // processData: false,
-                // cache: false,
+                contentType: false,
+                processData: false,
+                cache: false,
                 success: function (data) {
                     if (data.success) {
                         $.toast('提交成功！');
@@ -140,4 +137,5 @@ $(function () {
                 }
             });
         });
+
 });
